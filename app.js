@@ -21,19 +21,28 @@ function calculateRolls() {
   const rolls = rollsSlider.value;
   const quarantineDays = daysSlider.value;
 
-  console.log(rolls);
-  console.log(quarantineDays);
-
   const paperDays = rolls * 5; // A roll lasts 5 days
-
   const ratio = paperDays / quarantineDays * 100 ;
 
   const ratioDiv = document.getElementById('ratio');
 
-  if (ratio > 100) {
+  if (ratio > 500) {
     const emoji = "😄";
     ratioDiv.innerText = `${Math.round(ratio)}% ${emoji}`;
-  } else {
+  } else if (ratio > 300) {
+    const emoji = "😊";
+    ratioDiv.innerText = `${Math.round(ratio)}% ${emoji}`;
+  } else if (ratio > 200) {
+    const emoji = "😐";
+    ratioDiv.innerText = `${Math.round(ratio)}% ${emoji}`;
+  } else if (ratio > 100) {
+    const emoji = "😥";
+    ratioDiv.innerText = `${Math.round(ratio)}% ${emoji}`;
+  } else if (ratio > 80) {
+    const emoji = "😫";
+    ratioDiv.innerText = `${Math.round(ratio)}% ${emoji}`;
+  }
+  else {
     const emoji = "💩💩";
     ratioDiv.innerText = `${Math.round(ratio)}%  ${emoji}`;
   }
