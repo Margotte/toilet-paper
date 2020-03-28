@@ -1,0 +1,65 @@
+body {
+  background-color: #a2ad91;
+  color: #3a2d32;
+  font-family: 'Dosis', sans-serif;
+}
+
+.container {
+  background-color: #ffe3dc;
+  padding: 3%;
+  border-radius: 2%;
+  width: 40%;
+  margin: 10% auto;
+  text-align: center;
+  box-shadow: 5px 5px 5px #dbb4ad;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
+  background: #dbb4ad;
+  outline: none;
+  opacity: 0.7;
+  margin-top: 5%;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+input[type=range]::-moz-focus-outer {
+  border: 0;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  cursor: pointer;
+}
+
+
+#rolls::-moz-range-thumb {
+  background: url('toilet_icon.png');
+}
+
+#days::-moz-range-thumb {
+  background: url('calendar_icon.png');
+}

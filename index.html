@@ -2,22 +2,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Toilet Paper Rush!</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>TOILET PAPER RUSH!!!</h1>
+  <div class="container">
+    <h1>TOILET PAPER RUSH!!!</h1>
 
-  <form id="form">
-    <label for="nb-rolls">Rolls you have left:</label>
-    <input type="text" name="nb-rolls" id="nb-rolls">
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="rolls">
+      <p>Toilet Paper Rolls: <span id="rollsValue"></span></p>
 
-    <label for="nb-days">Days you have left:</label>
-    <input type="text" name="nb-days" id="nb-days">
+      <input type="range" min="1" max="100" value="50" class="slider" id="days">
+      <p>Confinement Days: <span id="daysValue"></span></p>
+    </div>
 
-    <input type="submit" value="Calculate!">
-  </form>
-
-  <div id="output">
-    <h1 id="ratio"></h1>
+    <div>
+      <h1 id="ratio"></h1>
+    </div>
   </div>
 
   <script src="app.js"></script>
