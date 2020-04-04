@@ -63,3 +63,11 @@ input[type=range]::-moz-focus-outer {
 #days::-moz-range-thumb {
   background: url('calendar_icon.png');
 }
+
+#rolls::-webkit-range-thumb {
+  background: url('toilet_icon.png');
+}
+
+#days::-webkit-range-thumb {
+  background: url('calendar_icon.png');
+}
