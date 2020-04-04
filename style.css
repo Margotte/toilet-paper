@@ -64,10 +64,10 @@ input[type=range]::-moz-focus-outer {
   background: url('calendar_icon.png');
 }
 
-#rolls::-webkit-range-thumb {
+#rolls::-webkit-slider-thumb {
   background: url('toilet_icon.png');
 }
 
-#days::-webkit-range-thumb {
+#days::-webkit-slider-thumb {
   background: url('calendar_icon.png');
 }
